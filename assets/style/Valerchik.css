@@ -101,7 +101,7 @@ body {
 }
 
 .header-container__robot {
-  width: 720px;
+  width: 740px;
 }
 
 .robot-cloud {
@@ -140,7 +140,17 @@ body {
   height: 330px;
   display: flex;
   align-items: flex-end;
+  padding-left: 20px;
 }
 .robot-img .robot-header {
   height: 95%;
+}
+
+@media (min-width: 1440px) {
+  .button-name {
+    font-size: 20px;
+  }
+  .robot-text {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=Valerchik.css.map */
