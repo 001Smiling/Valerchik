@@ -149,6 +149,7 @@ body {
     .header {
         height: 500px;
         background-image: url(../images/midfon.png);
+        background-size: cover;
 
         .header-container {
             display: grid;
@@ -222,8 +223,106 @@ body {
 
 @media (max-width: 750px) {
     .header {
-        height: 600px;
+        height: 700px;
         background-image: url(../images/smallfon.png);
-    }
+        background-size: cover;
 
+        .header-container {
+            grid-template-columns: 1fr;
+
+            .header-buttons {
+                .button-name {
+                    width: 200px;
+                    height: 70px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+
+                .button-name__btn {
+                    height: 70px;
+                    width: 70px;
+                }
+            }
+
+            .btn-black,
+            .btn-red {
+                position: absolute;
+                bottom: -60%;
+            }
+
+            .btn-black {
+                left: 10px;
+            }
+
+            .btn-red {
+                right: 10px;
+            }
+
+            .robot-cloud {
+
+                .robot-text {
+                    .my_name {
+                        background-image: url(../images/cloudsmall.png);
+                        margin-bottom: 150px;
+                        width: 100%;
+                    }
+                }
+
+                .robot-img {
+                    right: 10%;
+                    height: 200px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        height: 750px;
+
+        .header-container {
+
+            .header-buttons {
+                .button-name {
+                    width: 150px;
+                    height: 70px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+
+                .button-name__btn {
+                    height: 70px;
+                    width: 70px;
+                }
+            }
+
+            .btn-black,
+            .btn-red {
+                bottom: -70%;
+            }
+
+            .btn-black {
+                left: 10px;
+            }
+
+            .btn-red {
+                right: 10px;
+            }
+
+            .robot-cloud {
+
+                .robot-text {
+
+                    .my_name {
+                        margin-bottom: 150px;
+                    }
+                }
+
+                .robot-img {
+                    top: 25%;
+                }
+            }
+        }
+    }
 }

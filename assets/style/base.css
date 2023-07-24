@@ -301,6 +301,7 @@ body {
   .header {
     height: 500px;
     background-image: url(../images/midfon.png);
+    background-size: cover;
   }
   .header .header-container {
     display: grid;
@@ -354,8 +355,73 @@ body {
 }
 @media (max-width: 750px) {
   .header {
-    height: 600px;
+    height: 700px;
     background-image: url(../images/smallfon.png);
+    background-size: cover;
+  }
+  .header .header-container {
+    grid-template-columns: 1fr;
+  }
+  .header .header-container .header-buttons .button-name {
+    width: 200px;
+    height: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .header .header-container .header-buttons .button-name__btn {
+    height: 70px;
+    width: 70px;
+  }
+  .header .header-container .btn-black,
+  .header .header-container .btn-red {
+    position: absolute;
+    bottom: -60%;
+  }
+  .header .header-container .btn-black {
+    left: 10px;
+  }
+  .header .header-container .btn-red {
+    right: 10px;
+  }
+  .header .header-container .robot-cloud .robot-text .my_name {
+    background-image: url(../images/cloudsmall.png);
+    margin-bottom: 150px;
+    width: 100%;
+  }
+  .header .header-container .robot-cloud .robot-img {
+    right: 10%;
+    height: 200px;
+  }
+}
+@media (max-width: 500px) {
+  .header {
+    height: 750px;
+  }
+  .header .header-container .header-buttons .button-name {
+    width: 150px;
+    height: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .header .header-container .header-buttons .button-name__btn {
+    height: 70px;
+    width: 70px;
+  }
+  .header .header-container .btn-black,
+  .header .header-container .btn-red {
+    bottom: -70%;
+  }
+  .header .header-container .btn-black {
+    left: 10px;
+  }
+  .header .header-container .btn-red {
+    right: 10px;
+  }
+  .header .header-container .robot-cloud .robot-text .my_name {
+    margin-bottom: 150px;
+  }
+  .header .header-container .robot-cloud .robot-img {
+    top: 25%;
   }
 }
 
