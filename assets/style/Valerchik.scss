@@ -1,111 +1,328 @@
-@mixin adaptiv-font($pcSize, $mobSize){
+@import './Variables.scss';
+
+@mixin adaptiv-font($pcSize, $mobSize) {
     $addSize: $pcSize - $mobSize;
-    $maxWidth:$maxWidth - 320;
+    $maxWidth: $maxWidth - 320;
     font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
 }
-body{
+
+body {
     font-family: $cloudfont;
- }
- .header{
-    height: 427px;
-    background-image: url(../images/bigfon.png);
+}
+
+.header {
     background-size: cover;
     display: flex;
     justify-content: center;
- }
- .header-container{
+}
+
+.header-container {
     width: 95%;
     display: flex;
     justify-content: space-between;
- }
- .button-name{
-    width: 276px;
-    height: 57px;
+}
+
+.button-name {
     background-color: $maincolor;
     border-radius: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-bottom: 10px;
     font-family: $mainfont;
-    @include adaptiv-font(20,12);
- }
- .header-buttons{
-    height: 400px;
+    margin-bottom: 10px;
+}
+
+.header-buttons {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
- }
+}
 
-.button-header{
+.button-header {
     width: 82%;
 }
+
 .button-name__btn {
-  -webkit-appearance: none;
-  user-select: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  outline: none;
-  cursor: pointer;
-  width: 130px;
-  height: 130px;
-  background-image: linear-gradient(to top, $button-gradient);
-  border-radius: 90px;
-  border: 1px solid $button-border;
-  box-shadow: $button-shadow-default;
+    -webkit-appearance: none;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    cursor: pointer;
+    background-image: linear-gradient(to top, $button-gradient);
+    border-radius: 90px;
+    border: 1px solid $button-border;
+    box-shadow: $button-shadow-default;
 }
-.header-container__robot{
-    width: 740px;
-}
-.robot-cloud{
-    margin-top: 30px;
-    background-image: url(../images/cloudbig.png);
+
+.robot-cloud {
     display: flex;
     background-repeat: no-repeat;
 }
-.robot-text{
-    width: 500px;
-    height: 296px;
+
+.robot-text {
     background-repeat: no-repeat;
     background-size: cover;
     font-family: $cloudfont;
-    @include adaptiv-font(18,13);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    .robot-text__1{
-        width: 90%;
-        text-align: center;
-        padding-bottom: 10px;
-    }
-    .robot-text__2{
-        width: 406px;
-        padding-left: 20px;
-        li{
-            padding-top: 10px;
-        }
-
-    }
 }
-.robot-img{
-    height: 330px;
+
+.robot-img {
     display: flex;
     align-items: flex-end;
-    padding-left: 20px;
-    .robot-header{
+
+    .robot-header {
         height: 95%;
     }
 }
 
-@media (min-width: 1440px){
-    .button-name{
+@media (min-width: 1440px) {
+    .header {
+        height: 427px;
+        background-image: url(../images/bigfon.png);
+    }
+
+    .button-name {
+        width: 276px;
+        height: 57px;
+        @include adaptiv-font(20, 12);
+    }
+
+    .button-name__btn {
+        width: 130px;
+        height: 130px;
+    }
+
+    .header-container__robot {
+        width: 740px;
+    }
+
+    .robot-cloud {
+        margin-top: 30px;
+        background-image: url(../images/cloudbig.png);
+    }
+
+    .header-buttons {
+        height: 400px;
+    }
+
+    .button-name {
         font-size: 20px;
     }
-    .robot-text{
+
+    .robot-text {
+        width: 500px;
+        height: 296px;
+        @include adaptiv-font(18, 13);
         font-size: 18px;
+
+        .robot-text__1 {
+            width: 90%;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        .robot-text__2 {
+            width: 406px;
+            padding-left: 20px;
+
+            li {
+                padding-top: 10px;
+            }
+
+        }
+    }
+
+    .robot-img {
+        height: 330px;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 1439px) {
+    .header {
+        height: 500px;
+        background-image: url(../images/midfon.png);
+        background-size: cover;
+
+        .header-container {
+            display: grid;
+            grid-template-columns: 1fr 50% 1fr;
+
+            .header-buttons {
+                margin-bottom: 30px;
+
+                .button-name {
+                    width: 100%;
+                    height: 47px;
+                }
+
+                .button-name__btn {
+                    height: 100px;
+                    width: 100px;
+                }
+            }
+
+            .robot-cloud {
+
+                .robot-text {
+
+                    .robot-text__1,
+                    .robot-text__2 {
+                        padding-left: 30px;
+                        padding-right: 30px;
+                    }
+
+                    .robot-text__1 {
+                        padding-top: 20px;
+                    }
+
+                    .robot-text__2 {
+                        padding-bottom: 20px;
+                    }
+
+
+
+                    .robot__text {
+                        background-color: white;
+                        border-radius: 32px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                    }
+
+                    .my_name {
+                        align-self: flex-start;
+                        margin-bottom: 25%;
+                        margin-top: 30px;
+                        padding: 20px;
+                        width: 70%;
+                        text-align: left;
+                        background-image: url(../images/cloudmid.png);
+                        padding-bottom: 50px;
+                        background-size: 100% 100%;
+
+                    }
+                }
+
+                .robot-img {
+                    position: absolute;
+                    top: 20%;
+                    right: 35%;
+                    height: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .header {
+        height: 700px;
+        background-image: url(../images/smallfon.png);
+        background-size: cover;
+
+        .header-container {
+            grid-template-columns: 1fr;
+
+            .header-buttons {
+                .button-name {
+                    width: 200px;
+                    height: 70px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+
+                .button-name__btn {
+                    height: 70px;
+                    width: 70px;
+                }
+            }
+
+            .btn-black,
+            .btn-red {
+                position: absolute;
+                bottom: -60%;
+            }
+
+            .btn-black {
+                left: 10px;
+            }
+
+            .btn-red {
+                right: 10px;
+            }
+
+            .robot-cloud {
+
+                .robot-text {
+                    .my_name {
+                        background-image: url(../images/cloudsmall.png);
+                        margin-bottom: 150px;
+                        width: 100%;
+                    }
+                }
+
+                .robot-img {
+                    right: 10%;
+                    height: 200px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        height: 750px;
+
+        .header-container {
+
+            .header-buttons {
+                .button-name {
+                    width: 150px;
+                    height: 70px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+
+                .button-name__btn {
+                    height: 70px;
+                    width: 70px;
+                }
+            }
+
+            .btn-black,
+            .btn-red {
+                bottom: -70%;
+            }
+
+            .btn-black {
+                left: 10px;
+            }
+
+            .btn-red {
+                right: 10px;
+            }
+
+            .robot-cloud {
+
+                .robot-text {
+
+                    .my_name {
+                        margin-bottom: 150px;
+                    }
+                }
+
+                .robot-img {
+                    top: 25%;
+                }
+            }
+        }
     }
 }
