@@ -169,12 +169,17 @@
 
                 .robot-img {
                     position: absolute;
-                    right: 1.5em;
+                    right: 30%;
                     top: 5em;
                     height: 50%;
                 }
 
                 .robot-text {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    height: 450px;
 
                     .robot-text__1,
                     .robot-text__2 {
@@ -201,7 +206,6 @@
 
                     .my_name {
                         align-self: flex-start;
-                        margin-bottom: 25%;
                         margin-top: 30px;
                         padding: 20px;
                         width: 70%;
@@ -216,6 +220,36 @@
 
             }
         }
+    }
+}
+
+@media (max-width: 1390px) {
+    .header .header-container .robot-cloud .robot-text {
+        height: 470px;
+    }
+
+    .header .header-container .robot-cloud .robot-img {
+        top: 4.5em;
+    }
+}
+
+@media (max-width: 1250px) {
+    .header .header-container .robot-cloud .robot-img {
+        top: 5em;
+        right: 25%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .header .header-container .robot-cloud .robot-img {
+        right: 20%;
+    }
+}
+
+@media (max-width: 980px) {
+    .header .header-container .robot-cloud .robot-img {
+        right: 8%;
+        top: 4.5em;
     }
 }
 
@@ -246,7 +280,7 @@
             .btn-black,
             .btn-red {
                 position: absolute;
-                bottom: 3em;
+                bottom: 2em;
             }
 
             .btn-black {
@@ -268,11 +302,19 @@
                 }
 
                 .robot-img {
-                    right: 10%;
-                    height: 200px;
+                    right: 8%;
+                    top: 3em;
+                    height: 65%;
                 }
             }
         }
+    }
+}
+
+@media (max-width: 650px) {
+    .header .header-container .robot-cloud .robot-img {
+        right: -45px;
+        height: 60%;
     }
 }
 
@@ -311,15 +353,10 @@
 
             .robot-cloud {
 
-                .robot-text {
-
-                    .my_name {
-                        margin-bottom: 150px;
-                    }
-                }
-
                 .robot-img {
-                    top: 25%;
+                    right: 0;
+                    height: 55%;
+                    top: 4em;
                 }
             }
         }
