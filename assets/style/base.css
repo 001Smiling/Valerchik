@@ -289,7 +289,9 @@ p {
 
 .button-name__btn {
   -webkit-appearance: none;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -410,7 +412,7 @@ p {
     height: 450px;
   }
   .header .header-container .robot-cloud .robot-text .robot-text__1,
-.header .header-container .robot-cloud .robot-text .robot-text__2 {
+  .header .header-container .robot-cloud .robot-text .robot-text__2 {
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -483,7 +485,7 @@ p {
     width: 70px;
   }
   .header .header-container .btn-black,
-.header .header-container .btn-red {
+  .header .header-container .btn-red {
     position: absolute;
     bottom: 2em;
   }
@@ -525,7 +527,7 @@ p {
     width: 70px;
   }
   .header .header-container .btn-black,
-.header .header-container .btn-red {
+  .header .header-container .btn-red {
     bottom: 2em;
   }
   .header .header-container .btn-black {
@@ -539,6 +541,4 @@ p {
     height: 55%;
     top: 4em;
   }
-}
-
-/*# sourceMappingURL=base.css.map */
+}/*# sourceMappingURL=base.css.map */
