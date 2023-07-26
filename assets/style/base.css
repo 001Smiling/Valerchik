@@ -254,46 +254,6 @@ p {
     font-size: 24px;
   }
 }
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-body,
-ul,
-li,
-p {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  list-style: none;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  src: local(""), url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts//Montserrat-Bold.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  src: local(""), url("../fonts/Poppins-Medium.woff2") format("woff2"), url("../fonts/Poppins-Medium.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  src: local(""), url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-@font-face {
-  font-family: "Tektur";
-  font-style: normal;
-  font-weight: 500;
-  src: local(""), url("../fonts/Tektur-Bold.woff2") format("woff2"), url("../fonts/Tektur-Bold.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
 .header {
   background-size: cover;
   display: flex;
@@ -369,6 +329,10 @@ p {
   height: 95%;
 }
 
+.robot__for__mid {
+  display: none;
+}
+
 @media (min-width: 1440px) {
   .header {
     height: 427px;
@@ -414,10 +378,13 @@ p {
     height: 330px;
     padding-left: 20px;
   }
+  .robot-img .robot__display-none {
+    display: none;
+  }
 }
 @media (max-width: 1439px) {
   .header {
-    height: 500px;
+    height: 600px;
     background-image: url(../images/midfon.png);
     background-size: cover;
   }
@@ -426,7 +393,7 @@ p {
     grid-template-columns: 1fr 50% 1fr;
   }
   .header .header-container .header-buttons {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   .header .header-container .header-buttons .button-name {
     width: 100%;
@@ -436,14 +403,13 @@ p {
     height: 100px;
     width: 100px;
   }
-  .header .header-container .robot-cloud {
-    position: relative;
+  .header .header-container .robot-cloud .robot__for__desctop {
+    display: none;
   }
-  .header .header-container .robot-cloud .robot-img {
-    position: absolute;
-    right: 30%;
-    top: 5em;
-    height: 50%;
+  .header .header-container .robot-cloud .robot__for__mid {
+    display: flex;
+    z-index: 1;
+    height: 250px;
   }
   .header .header-container .robot-cloud .robot-text {
     display: flex;
@@ -469,40 +435,14 @@ p {
     margin-left: 10px;
     margin-right: 10px;
   }
-  .header .header-container .robot-cloud .robot-text .my_name {
+  .header .header-container .robot-cloud .robot-text .my__name {
     align-self: flex-start;
     margin-top: 30px;
     padding: 20px;
     width: 70%;
-    text-align: left;
     background-image: url(../images/cloudmid.png);
     padding-bottom: 50px;
     background-size: 100% 100%;
-  }
-}
-@media (max-width: 1390px) {
-  .header .header-container .robot-cloud .robot-text {
-    height: 470px;
-  }
-  .header .header-container .robot-cloud .robot-img {
-    top: 4.5em;
-  }
-}
-@media (max-width: 1250px) {
-  .header .header-container .robot-cloud .robot-img {
-    top: 5em;
-    right: 25%;
-  }
-}
-@media (max-width: 1100px) {
-  .header .header-container .robot-cloud .robot-img {
-    right: 20%;
-  }
-}
-@media (max-width: 980px) {
-  .header .header-container .robot-cloud .robot-img {
-    right: 8%;
-    top: 4.5em;
   }
 }
 @media (max-width: 750px) {
@@ -514,6 +454,9 @@ p {
   .header .header-container {
     grid-template-columns: 1fr;
     position: relative;
+  }
+  .header .header-container .robot__for__mid {
+    align-self: self-end;
   }
   .header .header-container .header-buttons .button-name {
     width: 200px;
@@ -536,21 +479,9 @@ p {
   .header .header-container .btn-red {
     right: 10px;
   }
-  .header .header-container .robot-cloud .robot-text .my_name {
+  .header .header-container .robot-cloud .robot-text .my__name {
     background-image: url(../images/cloudsmall.png);
-    margin-bottom: 150px;
     width: 100%;
-  }
-  .header .header-container .robot-cloud .robot-img {
-    right: 8%;
-    top: 3em;
-    height: 65%;
-  }
-}
-@media (max-width: 650px) {
-  .header .header-container .robot-cloud .robot-img {
-    right: -45px;
-    height: 60%;
   }
 }
 @media (max-width: 500px) {
@@ -576,11 +507,6 @@ p {
   }
   .header .header-container .btn-red {
     right: 10px;
-  }
-  .header .header-container .robot-cloud .robot-img {
-    right: 0;
-    height: 55%;
-    top: 4em;
   }
 }
 
