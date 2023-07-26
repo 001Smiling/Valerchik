@@ -498,6 +498,9 @@ p {
   .header {
     height: 650px;
   }
+  .header .header-container .robot-header1 {
+    height: 200px;
+  }
   .header .header-container .header-buttons .button-name {
     width: 150px;
     height: 40px;
