@@ -378,15 +378,11 @@ p {
     height: 330px;
     padding-left: 20px;
   }
-  .robot-img .robot__display-none {
-    display: none;
-  }
 }
 @media (max-width: 1439px) {
   .header {
     height: 500px;
     background-image: url(../images/midfon.png);
-    background-size: cover;
   }
   .header .header-container {
     display: grid;
@@ -396,8 +392,8 @@ p {
     margin-bottom: 20px;
   }
   .header .header-container .header-buttons .button-name {
-    width: 100%;
-    height: 47px;
+    width: 90%;
+    height: 70px;
   }
   .header .header-container .header-buttons .button-name__btn {
     height: 100px;
@@ -424,6 +420,7 @@ p {
     align-items: center;
     justify-content: space-between;
     height: 450px;
+    width: 100%;
   }
   .header .header-container .robot-cloud .robot-text .robot__text {
     background-color: white;
@@ -443,8 +440,6 @@ p {
     z-index: 4;
   }
   .header .header-container .robot-cloud .robot-text .my__name {
-    width: 90%;
-    text-align: left;
     padding-left: 10px;
     padding: 10px;
   }
@@ -453,7 +448,6 @@ p {
   .header {
     height: 650px;
     background-image: url(../images/smallfon.png);
-    background-size: cover;
   }
   .header .header-container {
     grid-template-columns: 1fr;
@@ -463,8 +457,8 @@ p {
     height: 200px;
   }
   .header .header-container .header-buttons .button-name {
-    width: 200px;
-    height: 70px;
+    width: 220px;
+    height: 50px;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -483,9 +477,18 @@ p {
   .header .header-container .btn-red {
     right: 10px;
   }
-  .header .header-container .robot-cloud .robot-text .my__name {
+  .header .header-container .robot-cloud {
+    justify-content: center;
+  }
+  .header .header-container .robot-cloud .robot-text {
+    width: 80%;
+  }
+  .header .header-container .robot-cloud .robot-text .cont-robot-cloud {
     background-image: url(../images/cloudsmall.png);
-    width: 100%;
+    height: 90px;
+  }
+  .header .header-container .robot-cloud .robot-text .cont-robot-cloud .robot-header1 {
+    height: 230px;
   }
   .header .header-container .robot-cloud .robot__for__mid {
     height: 220px;
@@ -497,7 +500,7 @@ p {
   }
   .header .header-container .header-buttons .button-name {
     width: 150px;
-    height: 70px;
+    height: 40px;
   }
 }
 
