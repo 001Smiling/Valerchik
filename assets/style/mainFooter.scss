@@ -89,10 +89,30 @@
 .main-button{
     display: none;
 }
+@media (min-width: 650px){
+    .main-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    .main-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
 @media (min-width: 1440px){
+        .main-wrapper {
+        width: 85%;
+        display: flex;
+        justify-content: center;
+      }
     .main-firstcomment__text,
     .main-secondcomment__text{
         font-size: 18px;
+    }
+    .main-comments{
+        font-size: 67px;
     }
 }
 @media (min-width: 1155px){
@@ -110,8 +130,12 @@
         flex-direction: column;
         justify-content: space-around;
         height: 650px;
+    }    
+    .main-firstcomment__text,
+    .main-secondcomment__text{
+        width: 81%;
     }
-    .main-comments__title{
+    .main-comments{
         font-family: $titlecloudfont;
         width: 100%;
         display: flex;
@@ -119,20 +143,9 @@
         align-items: center;
     }
     .main-comments__text{
-        width: 600px;
-        text-align: center;
-    }
-    .main-firstcomment__text,
-    .main-secondcomment__text{
-        width: 81%;
-    }
-    .main-comments{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    .main-comments__text{
         width: 90%;
+        text-align: center;
+        height: 45px;
     }
     .footer-socialmedia{
         width: 80%;
@@ -150,24 +163,6 @@
     }
     .main-secondcomment{
         width: 50%;
-    }
-}
-// @media (max-width: 990px){
-//     .main{
-//         height: 500px;
-//     }
-
-// }
-@media (min-width: 650px){
-    .main-wrapper {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-      }
-    .main-container{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
     }
 }
 
@@ -202,7 +197,7 @@
         transform: rotate(0deg);
         margin-bottom: 0;
       }
-    .main-comments__title{
+    .main-comments{
         line-height: 46px;
     }
     .main-button{
@@ -233,12 +228,5 @@
     .footer-support-vk{
         width: 190px;
         margin-left: 15px;
-    }
-}
-
-@media (max-width: 320px){
-    .main-comments__title{
-        line-height: 36px;
-        font-size: 24px;
     }
 }

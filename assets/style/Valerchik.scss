@@ -80,7 +80,7 @@
     }
 }
 
-.robot__for__mid {
+.robot-for-mid{
     display: none;
 }
 
@@ -120,7 +120,7 @@
         font-size: 18px;
 
         .robot-text__1 {
-            width: 90%;
+            width: 99%;
             text-align: center;
             padding-bottom: 10px;
         }
@@ -154,7 +154,7 @@
                 margin-bottom: 20px;
 
                 .button-name {
-                    width: 90%;
+                    width: 89%;
                     height: 70px;
                 }
 
@@ -165,11 +165,11 @@
             }
 
             .robot-cloud {
-                .robot__for__desctop {
+                .robot-for-desctop {
                     display: none;
                 }
 
-                .robot__for__mid {
+                .robot-for-mid {
                     display: flex;
                     justify-content: center;
                     width: 100%;
@@ -230,7 +230,7 @@
             grid-template-columns: 1fr;
             position: relative;
 
-            .robot__for__mid {
+            .robot-for-mid {
                 height: 200px;
             }
 
@@ -279,7 +279,7 @@
 
                 }
 
-                .robot__for__mid {
+                .robot-for-mid {
                     height: 220px;
                 }
             }
@@ -295,7 +295,7 @@
             .robot-cloud {
                 .robot-text {
                     .cont-robot-cloud {
-                        .robot__for__mid {
+                        .robot-for-mid{
                             height: 140px;
 
                             .robot-header1 {
