@@ -66,9 +66,9 @@ p {
 }
 
 .main-firstcomment {
-  background-color: #D9D9D9;
+  background: rgba(98, 52, 227, 0.5098039216);
   transform: rotate(-10deg);
-  color: #000;
+  color: #FFFFFF;
 }
 
 .main-firstcomment__text,
@@ -96,8 +96,8 @@ p {
 }
 
 .main-secondcomment {
-  background: rgba(98, 52, 227, 0.5098039216);
-  color: #FFFFFF;
+  background-color: #D9D9D9;
+  color: #000;
   transform: rotate(10deg);
 }
 
