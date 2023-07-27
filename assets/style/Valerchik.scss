@@ -292,8 +292,18 @@
         height: 650px;
 
         .header-container {
-            .robot-header1 {
-                height: 200px;
+            .robot-cloud {
+                .robot-text {
+                    .cont-robot-cloud {
+                        .robot__for__mid {
+                            height: 140px;
+
+                            .robot-header1 {
+                                height: 150px;
+                            }
+                        }
+                    }
+                }
             }
 
             .header-buttons {
