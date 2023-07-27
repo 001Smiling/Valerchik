@@ -212,7 +212,7 @@
 
                     .my__name {
                         padding-left: 10px;
-                        padding: 10px;
+                        padding: 20px 10px 10px 10px;
                     }
                 }
             }
@@ -267,7 +267,9 @@
 
                 .robot-text {
                     width: 80%;
-
+                    .my__name {
+                        padding: 10px 10px;
+                    }
                     .cont-robot-cloud {
                         background-image: url(../images/cloudsmall.png);
                         height: 90px;
@@ -296,10 +298,9 @@
                 .robot-text {
                     .cont-robot-cloud {
                         .robot-for-mid{
-                            height: 140px;
-
+                            height: 214px;
                             .robot-header1 {
-                                height: 150px;
+                                height: 220px;
                             }
                         }
                     }
@@ -310,6 +311,25 @@
                 .button-name {
                     width: 150px;
                     height: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .header {
+        .header-container {
+            .robot-cloud {
+                .robot-text {
+                    .cont-robot-cloud {
+                        .robot-for-mid{
+                            height: 158px;
+                            .robot-header1 {
+                                height: 166px;
+                            }
+                        }
+                    }
                 }
             }
         }
