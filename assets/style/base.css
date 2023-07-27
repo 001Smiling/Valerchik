@@ -498,8 +498,11 @@ p {
   .header {
     height: 650px;
   }
-  .header .header-container .robot-header1 {
-    height: 200px;
+  .header .header-container .robot-cloud .robot-text .cont-robot-cloud .robot__for__mid {
+    height: 170px;
+  }
+  .header .header-container .robot-cloud .robot-text .cont-robot-cloud .robot__for__mid .robot-header1 {
+    height: 180px;
   }
   .header .header-container .header-buttons .button-name {
     width: 150px;
