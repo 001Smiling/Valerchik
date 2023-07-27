@@ -1,25 +1,23 @@
-let index=0;
+const sliderContainer = document.getElementById("slider-container");
+const prevButton = document.getElementById("prev-btn");
+const nextButton = document.getElementById("next-btn");
 
-show_image(index);
+nextButton.addEventListener("click", () => {
+  sliderContainer.style.transform = "translateX(-296px)";
+  sliderContainer.style.transition = "transform 0.5s ease";
+  setTimeout(() => {
+    sliderContainer.style.transition = "none";
+    sliderContainer.appendChild(sliderContainer.firstElementChild);
+    sliderContainer.style.transform = "translateX(0)";
+  }, 500);
+});
 
-function show_image(i){
-    index +=i;
-
-    let images = document.getElementsByClassName("comment");
-// if($(window).width() < 650){
-    for (i=0; i<images.length; i++){ //убирает изображения с сайта
-        images[i].style.display = "none";
-    }
-// }
-   
-
-    if(index > images.length -1){
-        index = 0;
-    }
-
-    if(index < 0){
-        index = images.length -1;
-    }
-
-    images[index].style.display = "flex";
-}
+prevButton.addEventListener("click", () => {
+  sliderContainer.insertBefore(sliderContainer.lastElementChild, sliderContainer.firstElementChild);
+  sliderContainer.style.transform = "translateX(-296px)";
+  sliderContainer.style.transition = "none";
+  setTimeout(() => {
+    sliderContainer.style.transition = "transform 0.5s ease";
+    sliderContainer.style.transform = "translateX(0)";
+  }, 0);
+});
