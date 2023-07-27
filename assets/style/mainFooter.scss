@@ -85,6 +85,7 @@
     width: 30px;
     height: 30px;
     cursor: pointer;
+    margin-top: 6px;
 }
 .main-button{
     display: none;
@@ -126,7 +127,6 @@
 }
 @media (max-width: 1155px){
     .main{
-        display: flex;
         flex-direction: column;
         justify-content: space-around;
         height: 650px;
