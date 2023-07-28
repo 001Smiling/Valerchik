@@ -55,19 +55,6 @@ p {
   width: 89%;
 }
 
-.comment {
-  opacity: 0;
-  animation: ani 2.5s forwards;
-}
-
-@keyframes ani {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .main-firstcomment,
 .main-secondcomment {
   width: 371px;
@@ -165,6 +152,29 @@ p {
     align-items: center;
     justify-content: space-between;
   }
+  .main-comments__text {
+    opacity: 0;
+    animation: animation 1s forwards;
+  }
+  .main-firstcomment {
+    opacity: 0;
+    animation: animation 2s 0.5s forwards;
+  }
+  .main-secondcomment {
+    opacity: 0;
+    animation: animation 2s 1s forwards;
+  }
+  @keyframes animation {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 }
 @media (min-width: 1440px) {
   .main-wrapper {
@@ -173,7 +183,7 @@ p {
     justify-content: center;
   }
   .main-firstcomment__text,
-.main-secondcomment__text {
+  .main-secondcomment__text {
     font-size: 18px;
   }
   .main-comments {
@@ -196,7 +206,7 @@ p {
     height: 650px;
   }
   .main-firstcomment__text,
-.main-secondcomment__text {
+  .main-secondcomment__text {
     width: 81%;
   }
   .main-comments {
@@ -237,8 +247,8 @@ p {
     flex-direction: column;
   }
   .main-wrapper,
-.main-firstcomment,
-.main-secondcomment {
+  .main-firstcomment,
+  .main-secondcomment {
     width: 295px;
     height: 336px;
   }
@@ -255,7 +265,7 @@ p {
     transition: transform 0.5s ease;
   }
   .main-firstcomment,
-.main-secondcomment {
+  .main-secondcomment {
     flex-shrink: 0;
     transform: rotate(0deg);
     margin-bottom: 0;
@@ -331,7 +341,9 @@ p {
 
 .button-name__btn {
   -webkit-appearance: none;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -349,9 +361,14 @@ p {
   box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
 }
 
+.button-name__btn a img:hover {
+  width: 80%;
+}
+
 .robot-cloud {
   display: flex;
   background-repeat: no-repeat;
+  transition: background-image 3s;
 }
 
 .robot-text {
@@ -364,8 +381,18 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  opacity: 0;
+  animation: animation 2.5s forwards;
 }
 
+@keyframes animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .robot-img {
   display: flex;
   align-items: flex-end;
@@ -402,6 +429,7 @@ p {
   .robot-cloud {
     margin-top: 30px;
     background-image: url(../images/cloudbig.png);
+    transition: background-image 3s;
   }
   .header-buttons {
     height: 400px;
@@ -422,6 +450,9 @@ p {
   }
   .robot-text .robot-text__2 li {
     padding-top: 10px;
+  }
+  .robot-text .my__name {
+    min-height: 78px;
   }
   .robot-img {
     height: 330px;
@@ -491,6 +522,7 @@ p {
   .header .header-container .robot-cloud .robot-text .my__name {
     padding-left: 10px;
     padding: 20px 10px 10px 10px;
+    min-height: 78px;
   }
 }
 @media (max-width: 750px) {
@@ -516,7 +548,7 @@ p {
     width: 70px;
   }
   .header .header-container .btn-black,
-.header .header-container .btn-red {
+  .header .header-container .btn-red {
     position: absolute;
     bottom: 1em;
   }
@@ -568,6 +600,4 @@ p {
   .header .header-container .robot-cloud .robot-text .cont-robot-cloud .robot-for-mid .robot-header1 {
     height: 166px;
   }
-}
-
-/*# sourceMappingURL=base.css.map */
+}/*# sourceMappingURL=base.css.map */

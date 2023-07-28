@@ -58,12 +58,17 @@
         }
         &:active:not([disabled]) {
         box-shadow: $button-shadow-active;
-        }        
+        }
+}
+
+.button-name__btn a img:hover {
+    width: 80%;
 }
 
 .robot-cloud {
     display: flex;
     background-repeat: no-repeat;
+    transition: background-image 3s;
 }
 
 .robot-text {
@@ -76,6 +81,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+    animation: animation 2.5s forwards;
+}
+
+@keyframes animation {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 .robot-img {
@@ -119,6 +131,7 @@
     .robot-cloud {
         margin-top: 30px;
         background-image: url(../images/cloudbig.png);
+        transition: background-image 3s;
     }
 
     .header-buttons {
@@ -224,6 +237,7 @@
                     .my__name {
                         padding-left: 10px;
                         padding: 20px 10px 10px 10px;
+                        min-height: 78px;
                     }
                 }
             }
