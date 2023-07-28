@@ -173,7 +173,7 @@ p {
     justify-content: center;
   }
   .main-firstcomment__text,
-  .main-secondcomment__text {
+.main-secondcomment__text {
     font-size: 18px;
   }
   .main-comments {
@@ -196,7 +196,7 @@ p {
     height: 650px;
   }
   .main-firstcomment__text,
-  .main-secondcomment__text {
+.main-secondcomment__text {
     width: 81%;
   }
   .main-comments {
@@ -215,7 +215,7 @@ p {
     width: 80%;
   }
   .footer-support-vk {
-    width: 28%;
+    width: 35%;
   }
   .main-container {
     gap: 50px;
@@ -237,8 +237,8 @@ p {
     flex-direction: column;
   }
   .main-wrapper,
-  .main-firstcomment,
-  .main-secondcomment {
+.main-firstcomment,
+.main-secondcomment {
     width: 295px;
     height: 336px;
   }
@@ -255,7 +255,7 @@ p {
     transition: transform 0.5s ease;
   }
   .main-firstcomment,
-  .main-secondcomment {
+.main-secondcomment {
     flex-shrink: 0;
     transform: rotate(0deg);
     margin-bottom: 0;
@@ -331,9 +331,7 @@ p {
 
 .button-name__btn {
   -webkit-appearance: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -518,7 +516,7 @@ p {
     width: 70px;
   }
   .header .header-container .btn-black,
-  .header .header-container .btn-red {
+.header .header-container .btn-red {
     position: absolute;
     bottom: 1em;
   }
@@ -570,4 +568,6 @@ p {
   .header .header-container .robot-cloud .robot-text .cont-robot-cloud .robot-for-mid .robot-header1 {
     height: 166px;
   }
-}/*# sourceMappingURL=base.css.map */
+}
+
+/*# sourceMappingURL=base.css.map */
