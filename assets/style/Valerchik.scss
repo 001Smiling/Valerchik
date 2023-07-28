@@ -52,6 +52,13 @@
     border-radius: 90px;
     border: 1px solid $button-border;
     box-shadow: $button-shadow-default;
+
+        &:hover:not([disabled]) {
+        box-shadow: $button-shadow-hover;
+        }
+        &:active:not([disabled]) {
+        box-shadow: $button-shadow-active;
+        }        
 }
 
 .robot-cloud {
@@ -81,6 +88,10 @@
 }
 
 .robot-for-mid{
+    display: none;
+}
+
+.print.hidden {
     display: none;
 }
 
