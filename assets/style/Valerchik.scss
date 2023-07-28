@@ -59,10 +59,9 @@
         &:active:not([disabled]) {
         box-shadow: $button-shadow-active;
         }
-}
-
-.button-name__btn a img:hover {
-    width: 80%;
+        img:hover {
+            width: 80%;
+        }
 }
 
 .robot-cloud {
