@@ -76,13 +76,15 @@
     justify-content: space-between;
 }
 .footer-support-vk{
+    width: 182px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .footer-vk{
-    margin: 6px 5px 0 0;
+    display: flex;
+    align-items: center;
     width: 30px;
     height: 30px;
     cursor: pointer;
@@ -177,9 +179,6 @@
     .footer-socialmedia{
         width: 80%;
     }
-    .footer-support-vk{
-        width: 35%;
-    }
     .main-container{
         gap: 50px;
     }
@@ -239,21 +238,19 @@
     }
     .main-button__right{
         cursor: pointer;
+        img {&:active{
+            filter: hue-rotate(270deg);
+        }}
     }
     .footer{
         height: 136px;
     }
     .footer-socialmedia{
-        width: 80%;
-       display: block;
-       width: 320px;
-       height: 136px;
-       margin-top: 40px;
-       margin-left: 60px;
-       line-height: 34px;
+        flex-direction: column;
+        width: 320px;
+        height: 70px;
     }
     .footer-support-vk{
         width: 190px;
-        margin-left: 15px;
     }
 }
