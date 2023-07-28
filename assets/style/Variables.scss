@@ -63,7 +63,11 @@ $shadow-bottom: 0 6px 8px #D6D7D9;
 $shadow-top: 0 -4px 4px #CECFD1;
 $highlight-top: 0 -6px 4px #FEFEFE;
 $shadow-inset: inset 0 0 3px 0 #CECFD1;
+$shadow-inset-hover: inset 0 0 3px 3px #CECFD1;
+$shadow-inset-active: inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
 
 
 $button-shadow-base: $highlight-bottom, $shadow-bottom, $shadow-top, $highlight-top;
 $button-shadow-default: $button-shadow-base, $shadow-inset;
+$button-shadow-hover: $button-shadow-base, $shadow-inset-hover;
+$button-shadow-active: $button-shadow-base, $shadow-inset-active;

@@ -55,6 +55,19 @@ p {
   width: 89%;
 }
 
+.comment {
+  opacity: 0;
+  animation: ani 2.5s forwards;
+}
+
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .main-firstcomment,
 .main-secondcomment {
   width: 371px;
@@ -126,11 +139,15 @@ p {
 }
 
 .footer-vk {
-  margin-right: 5px;
+  margin: 6px 5px 0 0;
   width: 30px;
   height: 30px;
   cursor: pointer;
-  margin-top: 6px;
+}
+
+.footer-vk:hover {
+  border-radius: 25%;
+  box-shadow: 0 0 4px #668bf4, 0 0 6px #94a5f4;
 }
 
 .main-button {
@@ -325,6 +342,12 @@ p {
   border: 1px solid #8F9092;
   box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 0 #CECFD1;
 }
+.button-name__btn:hover:not([disabled]) {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
+}
+.button-name__btn:active:not([disabled]) {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
 
 .robot-cloud {
   display: flex;
@@ -352,6 +375,10 @@ p {
 }
 
 .robot-for-mid {
+  display: none;
+}
+
+.print.hidden {
   display: none;
 }
 
