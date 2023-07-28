@@ -68,6 +68,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #000;
 }
 .footer-socialmedia{
     width: 70%;
@@ -80,8 +81,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: #000;
+    &:hover{
+        .footer-vk{
+        border-radius: 25%;
+        box-shadow: 0 0 4px #668bf4, 0 0 6px #94a5f4;
+        }
+    }
 }
-
 .footer-vk{
     display: flex;
     align-items: center;
@@ -89,12 +96,6 @@
     height: 30px;
     cursor: pointer;
 }
-
-.footer-vk:hover {
-    border-radius: 25%;
-    box-shadow: 0 0 4px #668bf4, 0 0 6px #94a5f4;
-}
-
 .main-button{
     display: none;
 }
