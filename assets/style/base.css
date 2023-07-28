@@ -475,6 +475,9 @@ p {
     height: 100px;
     width: 100px;
   }
+  .header .header-container .header-buttons .button-name__btn img:hover {
+    width: 78%;
+  }
   .header .header-container .robot-cloud .robot-for-desctop {
     display: none;
   }
