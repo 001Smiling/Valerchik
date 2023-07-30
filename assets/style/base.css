@@ -77,9 +77,7 @@ p {
 
 .button-name__btn {
   -webkit-appearance: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -289,7 +287,7 @@ p {
     width: 70px;
   }
   .header .header-container .btn-black,
-  .header .header-container .btn-red {
+.header .header-container .btn-red {
     position: absolute;
     bottom: 1em;
   }
@@ -346,6 +344,7 @@ p {
   height: 489px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .main-sl {
@@ -405,6 +404,10 @@ p {
   transform: rotate(10deg);
 }
 
+.about {
+  margin-top: 95px;
+}
+
 .footer {
   background: rgba(175, 226, 227, 0.9215686275);
   font-family: "Montserrat", sans-serif;
@@ -420,28 +423,8 @@ p {
 .footer-socialmedia {
   width: 70%;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-}
-
-.footer-support-vk {
-  width: 182px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: #000;
-}
-.footer-support-vk:hover .footer-vk {
-  border-radius: 25%;
-  box-shadow: 0 0 4px #668bf4, 0 0 6px #94a5f4;
-}
-
-.footer-vk {
-  display: flex;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
 }
 
 .main-button {
@@ -490,7 +473,7 @@ p {
     justify-content: center;
   }
   .main-firstcomment__text,
-  .main-secondcomment__text {
+.main-secondcomment__text {
     font-size: 18px;
   }
   .main-comments {
@@ -513,7 +496,7 @@ p {
     height: 650px;
   }
   .main-firstcomment__text,
-  .main-secondcomment__text {
+.main-secondcomment__text {
     width: 81%;
   }
   .main-comments {
@@ -551,8 +534,8 @@ p {
     flex-direction: column;
   }
   .main-wrapper,
-  .main-firstcomment,
-  .main-secondcomment {
+.main-firstcomment,
+.main-secondcomment {
     width: 295px;
     height: 336px;
   }
@@ -569,7 +552,7 @@ p {
     transition: transform 0.5s ease;
   }
   .main-firstcomment,
-  .main-secondcomment {
+.main-secondcomment {
     flex-shrink: 0;
     transform: rotate(0deg);
     margin-bottom: 0;
@@ -604,4 +587,6 @@ p {
   .footer-support-vk {
     width: 190px;
   }
-}/*# sourceMappingURL=base.css.map */
+}
+
+/*# sourceMappingURL=base.css.map */
