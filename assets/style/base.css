@@ -421,12 +421,13 @@ p {
   background: url(../images/frame.png) no-repeat;
 }
 
-.about__biography {
+.main-about__biography {
   width: 558px;
   height: 593px;
+  display: block;
 }
 
-.about__title {
+.main-about__title {
   font-family: "Poppins", sans-serif;
   font-size: 41px;
   font-weight: 500;
@@ -437,7 +438,7 @@ p {
   height: 163px;
 }
 
-.about__author {
+.main-about__author {
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   font-weight: 700;
@@ -448,11 +449,12 @@ p {
   text-align: right;
 }
 
-.about__ten {
+.main-about__ten {
+  font-size: 25px;
   font-weight: 700;
 }
 
-.about__text {
+.main-about__text {
   font-family: Montserrat;
   font-size: 20px;
   font-weight: 400;
@@ -463,7 +465,7 @@ p {
   height: 92px;
 }
 
-.about__socialmedia {
+.main-about__socialmedia {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -471,8 +473,14 @@ p {
   letter-spacing: 0em;
   text-align: right;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 489px;
   height: 95px;
+}
+
+.main-about__social {
+  display: flex;
 }
 
 .footer {
