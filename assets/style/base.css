@@ -431,27 +431,24 @@ p {
 
 .main-about__biography {
   width: 558px;
-  height: 593px;
   text-align: right;
 }
 
 .main-about__title {
   font-family: "Poppins", sans-serif;
-  font-size: 41px;
+  font-size: calc(24px + 17 * ((100vw - 320px) / 1120));
   font-weight: 500;
   line-height: 77px;
   height: 163px;
   text-shadow: 0px 3px 3px rgba(120, 118, 118, 0.492);
-  margin-top: 35px;
 }
 
 .main-about__author {
   font-family: "Montserrat", sans-serif;
-  font-size: 30px;
+  font-size: calc(21px + 9 * ((100vw - 320px) / 1120));
   font-weight: 700;
   line-height: 43px;
   height: 67px;
-  margin-top: 35px;
 }
 
 .main-about__ten {
@@ -461,22 +458,20 @@ p {
 
 .main-about__text {
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
+  font-size: calc(14px + 6 * ((100vw - 320px) / 1120));
   font-weight: 400;
   line-height: 26px;
   height: 92px;
-  margin-top: 35px;
 }
 
 .main-about__socialmedia {
   font-family: "Poppins", sans-serif;
-  font-size: 20px;
+  font-size: calc(12px + 8 * ((100vw - 320px) / 1120));
   font-weight: 700;
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 95px;
-  margin-top: 35px;
 }
 
 .main-about__social {
@@ -512,6 +507,14 @@ p {
 }
 
 .main-button {
+  display: none;
+}
+
+.main-about__foto_two {
+  display: none;
+}
+
+.main-about__foto_tree {
   display: none;
 }
 
@@ -577,7 +580,7 @@ p {
   .main {
     flex-direction: column;
     justify-content: space-around;
-    height: 650px;
+    height: 1074px;
   }
   .main-firstcomment__text,
 .main-secondcomment__text {
@@ -609,10 +612,24 @@ p {
   .main-secondcomment {
     width: 50%;
   }
+  .main-about {
+    width: 720px;
+    height: 475px;
+    background: url(../images/frame2.png);
+  }
+  .main-about__title {
+    line-height: 45px;
+  }
+  .main-about__foto_two {
+    display: block;
+  }
+  .main-about__foto {
+    display: none;
+  }
 }
 @media (max-width: 650px) {
   .main {
-    height: 500px;
+    height: 1090px;
   }
   .main-sl {
     flex-direction: column;
@@ -659,6 +676,27 @@ p {
   }
   .main-button__right img:active {
     filter: hue-rotate(270deg);
+  }
+  .main-about {
+    width: 720px;
+    height: 475px;
+    background: none;
+  }
+  .main-about__biography {
+    text-align: center;
+  }
+  .main-about__text_foto {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-about__title {
+    height: 93px;
+  }
+  .main-about__foto_tree {
+    display: block;
+  }
+  .main-about__foto_two {
+    display: none;
   }
   .footer {
     height: 136px;

@@ -79,25 +79,24 @@
 }
 .main-about__biography{
     width: 558px;
-    height: 593px;
     text-align: right;
 }
 .main-about__title {
 font-family: $titlecloudfont;
-font-size: 41px;
+@include adaptiv-font(41, 24);
 font-weight: 500;
 line-height: 77px;
 height: 163px;
 text-shadow: 0px 3px 3px rgba(120, 118, 118, 0.492);
-margin-top: 35px;
+// margin-top: 35px;
 }
 .main-about__author {
 font-family: $mainfont;
-font-size: 30px;
+@include adaptiv-font(30, 21);
 font-weight: 700;
 line-height: 43px;
 height: 67px;
-margin-top: 35px;
+// margin-top: 35px;
 }
 .main-about__ten{
     font-size: 25px;
@@ -105,21 +104,21 @@ margin-top: 35px;
 }
 .main-about__text {
 font-family: $mainfont;
-font-size: 20px;
+@include adaptiv-font(20, 14);
 font-weight: 400;
 line-height: 26px;
 height: 92px;
-margin-top: 35px;
+// margin-top: 35px;
 }
 .main-about__socialmedia {
 font-family: $titlecloudfont;
-font-size: 20px;
+@include adaptiv-font(20, 12);
 font-weight: 700;
 display: flex;
 justify-content: space-around;
 align-items: center;
 height: 95px;
-margin-top: 35px;
+// margin-top: 35px;
 }
 .main-about__social{
     display: flex;
@@ -179,6 +178,13 @@ margin-right: 8px;
 .main-button{
     display: none;
 }
+.main-about__foto_two{
+    display: none;
+}
+.main-about__foto_tree{
+    display: none;
+}
+
 @media (min-width: 650px){
     .main-wrapper {
         width: 100%;
@@ -239,7 +245,7 @@ margin-right: 8px;
     .main{
         flex-direction: column;
         justify-content: space-around;
-        height: 650px;
+        height: 1074px;
     }    
     .main-firstcomment__text,
     .main-secondcomment__text{
@@ -271,11 +277,26 @@ margin-right: 8px;
     .main-secondcomment{
         width: 50%;
     }
+    .main-about{
+        width: 720px;
+        height: 475px;
+        background: url(../images/frame2.png);
+       
+    }
+    .main-about__title{
+        line-height: 45px;
+    }
+    .main-about__foto_two{
+        display: block;
+    }
+    .main-about__foto{
+        display: none;
+    }
 }
 
 @media (max-width: 650px){
     .main{
-        height: 500px;
+        height: 1090px;
     }
     .main-sl{
         flex-direction: column;
@@ -322,6 +343,27 @@ margin-right: 8px;
         img {&:active{
             filter: hue-rotate(270deg);
         }}
+    }
+    .main-about{
+        width: 720px;
+        height: 475px;
+        background: none;
+    }
+    .main-about__biography{
+        text-align: center;
+    }
+    .main-about__text_foto{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-about__title{
+        height: 93px;
+    }
+    .main-about__foto_tree{
+        display: block;
+    }
+    .main-about__foto_two{
+        display: none;
     }
     .footer{
         height: 136px;
