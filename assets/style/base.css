@@ -341,7 +341,7 @@ p {
   }
 }
 .main {
-  height: 489px;
+  height: 1383px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -406,6 +406,37 @@ p {
 
 .about {
   margin-top: 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/frame.png) no-repeat;
+}
+
+.about__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 51px;
+  font-weight: 500;
+  line-height: 77px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+
+.about__author {
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+
+.about__text {
+  font-family: Montserrat;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: right;
 }
 
 .footer {
