@@ -62,14 +62,12 @@
 }
 
 .main-about {
-    width: 1357px;
     height: 715px;
     width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
     background: url(../images/frame.png) no-repeat;
-    margin-left: 90px;
 }
 .main-about__text_foto{
     display: flex;
@@ -78,6 +76,10 @@
     align-items: center;
 }
 .main-about__biography{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-between;
     width: 558px;
     text-align: right;
 }
@@ -88,7 +90,6 @@ font-weight: 500;
 line-height: 77px;
 height: 163px;
 text-shadow: 0px 3px 3px rgba(120, 118, 118, 0.492);
-// margin-top: 35px;
 }
 .main-about__author {
 font-family: $mainfont;
@@ -96,7 +97,6 @@ font-family: $mainfont;
 font-weight: 700;
 line-height: 43px;
 height: 67px;
-// margin-top: 35px;
 }
 .main-about__ten{
     font-size: 25px;
@@ -107,18 +107,15 @@ font-family: $mainfont;
 @include adaptiv-font(20, 14);
 font-weight: 400;
 line-height: 26px;
-height: 92px;
-// margin-top: 35px;
 }
 .main-about__socialmedia {
 font-family: $titlecloudfont;
 @include adaptiv-font(20, 12);
 font-weight: 700;
+width: 489px;
 display: flex;
-justify-content: space-around;
+justify-content: space-between;
 align-items: center;
-height: 95px;
-// margin-top: 35px;
 }
 .main-about__social{
     display: flex;
@@ -130,12 +127,6 @@ margin-right: 8px;
 .main-about__tch{
     margin-right: 8px;
 }
-// .main-about__social_dop{
-//     width: 80%;
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-// }
 
 
 .footer{
@@ -283,8 +274,12 @@ margin-right: 8px;
         background: url(../images/frame2.png);
        
     }
+    .main-about__biography{
+        width: 317px;
+    }
     .main-about__title{
         line-height: 45px;
+        height: 110px;
     }
     .main-about__foto_two{
         display: block;
@@ -358,6 +353,9 @@ margin-right: 8px;
     }
     .main-about__title{
         height: 93px;
+    }
+    .main-about__author{
+        height: 43px;
     }
     .main-about__foto_tree{
         display: block;

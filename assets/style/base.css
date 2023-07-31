@@ -412,14 +412,12 @@ p {
 }
 
 .main-about {
-  width: 1357px;
   height: 715px;
   width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
   background: url(../images/frame.png) no-repeat;
-  margin-left: 90px;
 }
 
 .main-about__text_foto {
@@ -430,6 +428,10 @@ p {
 }
 
 .main-about__biography {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
   width: 558px;
   text-align: right;
 }
@@ -461,17 +463,16 @@ p {
   font-size: calc(14px + 6 * ((100vw - 320px) / 1120));
   font-weight: 400;
   line-height: 26px;
-  height: 92px;
 }
 
 .main-about__socialmedia {
   font-family: "Poppins", sans-serif;
   font-size: calc(12px + 8 * ((100vw - 320px) / 1120));
   font-weight: 700;
+  width: 489px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  height: 95px;
 }
 
 .main-about__social {
@@ -617,8 +618,12 @@ p {
     height: 475px;
     background: url(../images/frame2.png);
   }
+  .main-about__biography {
+    width: 317px;
+  }
   .main-about__title {
     line-height: 45px;
+    height: 110px;
   }
   .main-about__foto_two {
     display: block;
@@ -691,6 +696,9 @@ p {
   }
   .main-about__title {
     height: 93px;
+  }
+  .main-about__author {
+    height: 43px;
   }
   .main-about__foto_tree {
     display: block;
