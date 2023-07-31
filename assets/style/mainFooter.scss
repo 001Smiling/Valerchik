@@ -64,18 +64,23 @@
 .main-about {
     width: 1357px;
     height: 715px;
-    width: 100%;
+    width: 80%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background: url(../images/frame.png) no-repeat;
     margin-left: 90px;
+}
+.main-about__text_foto{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
 }
 .main-about__biography{
     width: 558px;
     height: 593px;
     text-align: right;
-    margin-top: 120px;
 }
 .main-about__title {
 font-family: $titlecloudfont;
@@ -84,6 +89,7 @@ font-weight: 500;
 line-height: 77px;
 height: 163px;
 text-shadow: 0px 3px 3px rgba(120, 118, 118, 0.492);
+margin-top: 35px;
 }
 .main-about__author {
 font-family: $mainfont;
@@ -91,6 +97,7 @@ font-size: 30px;
 font-weight: 700;
 line-height: 43px;
 height: 67px;
+margin-top: 35px;
 }
 .main-about__ten{
     font-size: 25px;
@@ -102,23 +109,34 @@ font-size: 20px;
 font-weight: 400;
 line-height: 26px;
 height: 92px;
+margin-top: 35px;
 }
 .main-about__socialmedia {
 font-family: $titlecloudfont;
 font-size: 20px;
 font-weight: 700;
-line-height: 32px;
 display: flex;
 justify-content: space-around;
 align-items: center;
 height: 95px;
-margin-left: 100px;
+margin-top: 35px;
 }
 .main-about__social{
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
+.main-about__vk{
+margin-right: 8px;
+}
+.main-about__tch{
+    margin-right: 8px;
+}
+// .main-about__social_dop{
+//     width: 80%;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+// }
 
 
 .footer{
