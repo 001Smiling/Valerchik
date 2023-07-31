@@ -69,32 +69,30 @@
     justify-content: space-around;
     align-items: center;
     background: url(../images/frame.png) no-repeat;
-
+    margin-left: 90px;
 }
 .main-about__biography{
     width: 558px;
     height: 593px;
-    display: block;
+    text-align: right;
+    margin-top: 100px;
 }
 .main-about__title {
 font-family: $titlecloudfont;
 font-size: 41px;
 font-weight: 500;
 line-height: 77px;
-letter-spacing: 0em;
-text-align: right;
 width: 599px;
 height: 163px;
+text-shadow: 0px 3px 3px rgba(120, 118, 118, 0.492);
 }
 .main-about__author {
 font-family: $mainfont;
 font-size: 30px;
 font-weight: 700;
 line-height: 43px;
-letter-spacing: 0em;
 width: 513px;
 height: 67px;
-text-align: right;
 }
 .main-about__ten{
     font-size: 25px;
@@ -105,9 +103,7 @@ font-family: Montserrat;
 font-size: 20px;
 font-weight: 400;
 line-height: 26px;
-letter-spacing: 0em;
-text-align: right;
-width: 554px;
+width: 544px;
 height: 92px;
 }
 .main-about__socialmedia {
@@ -115,16 +111,16 @@ font-family: $titlecloudfont;
 font-size: 20px;
 font-weight: 700;
 line-height: 32px;
-letter-spacing: 0em;
-text-align: right;
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
 align-items: center;
 width: 489px;
 height: 95px;
 }
 .main-about__social{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .main-about__foto{
 
