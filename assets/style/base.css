@@ -426,7 +426,7 @@ p {
   width: 558px;
   height: 593px;
   text-align: right;
-  margin-top: 100px;
+  margin-top: 120px;
 }
 
 .main-about__title {
@@ -434,7 +434,6 @@ p {
   font-size: 41px;
   font-weight: 500;
   line-height: 77px;
-  width: 599px;
   height: 163px;
   text-shadow: 0px 3px 3px rgba(120, 118, 118, 0.492);
 }
@@ -444,7 +443,6 @@ p {
   font-size: 30px;
   font-weight: 700;
   line-height: 43px;
-  width: 513px;
   height: 67px;
 }
 
@@ -454,11 +452,10 @@ p {
 }
 
 .main-about__text {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 26px;
-  width: 544px;
   height: 92px;
 }
 
@@ -470,8 +467,8 @@ p {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 489px;
   height: 95px;
+  margin-left: 100px;
 }
 
 .main-about__social {
