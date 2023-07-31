@@ -406,11 +406,17 @@ p {
 }
 
 .main-about {
+  width: 1357px;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background: url(../images/frame.png) no-repeat;
+}
+
+.about__biography {
+  width: 558px;
+  height: 593px;
 }
 
 .about__title {
@@ -420,6 +426,8 @@ p {
   line-height: 77px;
   letter-spacing: 0em;
   text-align: right;
+  width: 599px;
+  height: 163px;
 }
 
 .about__author {
@@ -428,6 +436,8 @@ p {
   font-weight: 700;
   line-height: 43px;
   letter-spacing: 0em;
+  width: 513px;
+  height: 67px;
   text-align: right;
 }
 
@@ -438,6 +448,8 @@ p {
   line-height: 26px;
   letter-spacing: 0em;
   text-align: right;
+  width: 554px;
+  height: 92px;
 }
 
 .about__socialmedia {

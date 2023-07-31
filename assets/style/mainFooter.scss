@@ -62,18 +62,17 @@
 }
 
 .main-about {
-    // margin-top: 95px;
-    // width: 1357px;
+    width: 1357px;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background: url(../images/frame.png) no-repeat;
 
 }
 .about__biography{
-    // width: 558px;
-    // height: 593px;
+    width: 558px;
+    height: 593px;
 }
 .about__title {
 font-family: $titlecloudfont;
@@ -82,6 +81,8 @@ font-weight: 500;
 line-height: 77px;
 letter-spacing: 0em;
 text-align: right;
+width: 599px;
+height: 163px;
 }
 .about__author {
 font-family: $mainfont;
@@ -89,8 +90,9 @@ font-size: 35px;
 font-weight: 700;
 line-height: 43px;
 letter-spacing: 0em;
+width: 513px;
+height: 67px;
 text-align: right;
-
 }
 .about__text {
 font-family: Montserrat;
@@ -99,7 +101,8 @@ font-weight: 500;
 line-height: 26px;
 letter-spacing: 0em;
 text-align: right;
-
+width: 554px;
+height: 92px;
 
 }
 .about__socialmedia {
