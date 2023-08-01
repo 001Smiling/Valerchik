@@ -80,7 +80,6 @@
     align-items: flex-end;
     flex-direction: column;
     justify-content: space-between;
-    width: 558px;
     height: 450px;
     text-align: right;
 }
@@ -147,26 +146,6 @@ margin-right: 8px;
     justify-content: center;
     align-items: center;
 }
-// .footer-support-vk{
-//     width: 182px;
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-//     color: #000;
-//     &:hover{
-//         .footer-vk{
-//         border-radius: 25%;
-//         box-shadow: 0 0 4px #668bf4, 0 0 6px #94a5f4;
-//         }
-//     }
-// }
-// .footer-vk{
-//     display: flex;
-//     align-items: center;
-//     width: 30px;
-//     height: 30px;
-//     cursor: pointer;
-// }
 .main-button{
     display: none;
 }
@@ -300,7 +279,7 @@ margin-right: 8px;
 
 @media (max-width: 650px){
     .main{
-        height: 1090px;
+        height: 1190px;
     }
     .main-sl{
         flex-direction: column;
@@ -349,16 +328,17 @@ margin-right: 8px;
         }}
     }
     .main-about{
-        width: 720px;
-        height: 475px;
+        height: 600px;
         background: none;
     }
     .main-about__biography{
         text-align: center;
+        align-items: center;
     }
     .main-about__text_foto{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     .main-about__title{
         height: 93px;
@@ -372,6 +352,12 @@ margin-right: 8px;
     .main-about__foto_two{
         display: none;
     }
+    .main-about__socialmedia{
+        display: block;
+    }
+    // .main-about__social{
+    //     flex-direction: column;
+    // }
     .footer{
         height: 136px;
     }
