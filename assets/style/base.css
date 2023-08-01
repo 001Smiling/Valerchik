@@ -420,6 +420,10 @@ p {
   background: url(../images/frame.png) no-repeat;
 }
 
+.main-about__container {
+  width: 90%;
+}
+
 .main-about__text_foto {
   display: flex;
   width: 100%;
@@ -471,7 +475,7 @@ p {
   font-weight: 700;
   width: 489px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 

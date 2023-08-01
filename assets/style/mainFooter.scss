@@ -69,6 +69,9 @@
     align-items: center;
     background: url(../images/frame.png) no-repeat;
 }
+.main-about__container{
+    width: 90%;
+}
 .main-about__text_foto{
     display: flex;
     width: 100%;
@@ -114,12 +117,15 @@ font-family: $titlecloudfont;
 font-weight: 700;
 width: 489px;
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
 align-items: center;
 }
 .main-about__social{
     display: flex;
     align-items: center;
+}
+.main-about__social_container{
+
 }
 .main-about__vk{
 margin-right: 8px;
