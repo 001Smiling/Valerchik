@@ -380,11 +380,17 @@ margin-right: 8px;
         display: none;
     }
     .main-about__socialmedia{
-        width: 250;
+        justify-content: flex-end;
     }
-    // .main-about__social{
-    //     flex-direction: column;
-    // }
+    .main-about__social_container{
+        display: block;
+    }
+    .main-about__social{
+        justify-content: center;
+    }
+    .tch{
+        margin-right: 24px;
+    }
     .footer{
         height: 136px;
     }
