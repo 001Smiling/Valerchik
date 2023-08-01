@@ -63,14 +63,14 @@
 
 .main-about {
     height: 715px;
-    width: 80%;
+    width: 95%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     background: url(../images/frame.png) no-repeat;
 }
 .main-about__container{
-    width: 90%;
+    width: 100%;
 }
 .main-about__text_foto{
     display: flex;
@@ -117,7 +117,7 @@ font-family: $titlecloudfont;
 font-weight: 700;
 width: 489px;
 display: flex;
-justify-content: space-around;
+justify-content: space-between;
 align-items: center;
 }
 .main-about__social{
@@ -126,6 +126,8 @@ align-items: center;
 }
 .main-about__social_container{
 display: flex;
+width: 65%;
+justify-content: space-between;
 }
 .main-about__vk{
 margin-right: 8px;
@@ -358,9 +360,9 @@ margin-right: 8px;
     .main-about__foto_two{
         display: none;
     }
-    // .main-about__socialmedia{
-    //     display: block;
-    // }
+    .main-about__socialmedia{
+        width: 250;
+    }
     // .main-about__social{
     //     flex-direction: column;
     // }
@@ -368,6 +370,7 @@ margin-right: 8px;
         height: 136px;
     }
     .footer-socialmedia{
+        font-weight: 800;
         flex-direction: column;
         width: 320px;
         height: 70px;
