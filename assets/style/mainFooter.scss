@@ -3,8 +3,17 @@
     $maxWidth: $maxWidth - 320;
     font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
 }
+
 .main{
     height: 1383px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.main-comments__section{
+    width: 100%;
+    height: 467px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -63,20 +72,17 @@
 
 .main-about {
     height: 715px;
-    width: 95%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     background: url(../images/frame.png) no-repeat;
 }
-.main-about__container{
-    width: 100%;
-}
+
 .main-about__text_foto{
     display: flex;
-    width: 100%;
-    justify-content: space-around;
     align-items: center;
+    width: 87%;
+    justify-content: space-between;
 }
 .main-about__biography{
     display: flex;
@@ -163,7 +169,20 @@ margin-right: 8px;
 .main-about__foto_tree{
     display: none;
 }
-
+@media (min-width: 1441px){
+    .main-about {
+        width: 80%;
+    }
+}
+@media (max-width: 1600px){
+    .main-about {
+        width: 95%;
+    }
+    .main-about__text_foto{
+        width: 90%;
+        justify-content: space-around;
+    }
+}
 @media (min-width: 650px){
     .main-wrapper {
         width: 100%;
@@ -212,7 +231,7 @@ margin-right: 8px;
     }
 }
 @media (min-width: 1155px){
-    main{
+    .main-comments__section{
         position: relative;
     }
     .main-comments{
@@ -240,7 +259,7 @@ margin-right: 8px;
     .main-comments__text{
         width: 90%;
         text-align: center;
-        height: 45px;
+        height: 137px;
     }
     .footer-socialmedia{
         width: 80%;
