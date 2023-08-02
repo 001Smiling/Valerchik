@@ -18,7 +18,8 @@
 
 .button-name {
     font-family: $cloudfont;
-    @include adaptiv-font(20, 12);
+    @include adaptiv-font(20, 10);
+    font-weight: 700;
     background-color: $maincolor;
     border-radius: 30px;
     display: flex;
@@ -357,11 +358,17 @@
                     .cont-robot-cloud {
                         .robot-for-mid{
                             height: 158px;
+                            padding-left: 68px;
                             .robot-header1 {
                                 height: 166px;
                             }
                         }
                     }
+                }
+            }
+            .header-buttons {
+                .button-name {
+                    width: 133px;
                 }
             }
         }

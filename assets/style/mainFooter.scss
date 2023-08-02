@@ -3,21 +3,19 @@
     $maxWidth: $maxWidth - 320;
     font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
 }
-
-.main{
-    height: 1383px;
+.main,
+.main-comments__section{
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
 }
+.main{
+    height: 1383px;
+}
 .main-comments__section{
     width: 100%;
     height: 467px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
 }
 .main-sl{
     width: 100%;
@@ -58,7 +56,7 @@
     @include adaptiv-font(67, 24);
     width: 280px;
     text-align: center;
-    line-height: 100px;
+    line-height: 149%;
     flex-shrink: 0;
 }
 .main-comments__text{
@@ -84,7 +82,17 @@
     width: 87%;
     justify-content: space-between;
 }
+.main-about__foto{
+    width: 40%;
+    img{
+        width: 100%;
+    }
+}
+.main-about__biography-cont{
+    width: 60%;
+}
 .main-about__biography{
+    width: 507px;
     display: flex;
     align-items: flex-end;
     flex-direction: column;
@@ -94,34 +102,33 @@
 }
 .main-about__title {
 font-family: $titlecloudfont;
-@include adaptiv-font(41, 24);
+@include adaptiv-font(41, 18);
 font-weight: 500;
-line-height: 77px;
-height: 163px;
+line-height: 187%;
 text-shadow: 0px 3px 3px rgba(120, 118, 118, 0.492);
 }
 .main-about__author {
 font-family: $mainfont;
-@include adaptiv-font(30, 21);
+@include adaptiv-font(30, 16);
 font-weight: 700;
-line-height: 43px;
+line-height: 143%;
 height: 67px;
 }
 .main-about__ten{
-    font-size: 25px;
+    @include adaptiv-font(25, 14);
     font-weight: 700;
 }
 .main-about__text {
 font-family: $mainfont;
-@include adaptiv-font(20, 14);
+@include adaptiv-font(20, 16);
 font-weight: 400;
-line-height: 26px;
+line-height: 130%;
 }
 .main-about__socialmedia {
 font-family: $titlecloudfont;
-@include adaptiv-font(20, 12);
+@include adaptiv-font(18, 14);
 font-weight: 700;
-width: 489px;
+width: 77%;
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -130,13 +137,32 @@ align-items: center;
     display: flex;
     align-items: center;
 }
-.main-about__social_container{
+.main-about__social-container{
 display: flex;
 width: 65%;
 justify-content: space-between;
 }
+.vk{
+    &:hover{
+        .main-about__vk{
+            border-radius: 25%;
+            box-shadow: 0 0 1px #668bf4, 0 0 6px #94a5f4;
+        }
+    }
+}
+.tch{
+    &:hover{
+        .main-about__tch{
+            border-radius: 25%;
+            box-shadow: 0 0 9px #b30909, 0 0 6px #e94d18;
+        }
+    }
+}
 .main-about__vk{
-margin-right: 8px;
+    cursor: pointer;
+    margin-right: 8px;
+    width: 29px;
+    height: 29px;
 }
 .main-about__tch{
     margin-right: 8px;
@@ -168,11 +194,6 @@ margin-right: 8px;
 }
 .main-about__foto_tree{
     display: none;
-}
-@media (min-width: 1441px){
-    .main-about {
-        width: 80%;
-    }
 }
 @media (max-width: 1600px){
     .main-about {
@@ -217,17 +238,35 @@ margin-right: 8px;
     }
 }
 @media (min-width: 1440px){
-        .main-wrapper {
-        width: 85%;
+    .main-wrapper {
+        width: 90%;
         display: flex;
         justify-content: center;
-      }
+    }
     .main-firstcomment__text,
     .main-secondcomment__text{
         font-size: 18px;
     }
     .main-comments{
         font-size: 67px;
+    }
+    .main-about {
+        width: 82%;
+    }
+    .main-about__title {
+        font-size: 41px;
+    }
+    .main-about__author {
+        font-size: 30px;
+    }
+    .main-about__ten{
+        font-size: 25px;
+    }
+    .main-about__text {
+        font-size: 20px;
+    }
+    .main-about__socialmedia {
+        font-size: 18px;
     }
 }
 @media (min-width: 1155px){
@@ -243,7 +282,7 @@ margin-right: 8px;
     .main{
         flex-direction: column;
         justify-content: space-around;
-        height: 1074px;
+        height: 1200px;
     }    
     .main-firstcomment__text,
     .main-secondcomment__text{
@@ -276,16 +315,19 @@ margin-right: 8px;
         width: 50%;
     }
     .main-about{
-        width: 80%;
-        height: 475px;
+        width: 89%;
+        height: 530px;
         background: url(../images/frame2.png) no-repeat;
     }
+    .main-about__foto{
+        width: 40%;
+    }
     .main-about__text_foto{
-        width: 100%;
+        width: 93%;
         justify-content: space-between;
-        align-items: flex-start;
     }
     .main-about__biography{
+        width: 89%;
         height: 350px;
     }
     .main-about__title{
@@ -294,13 +336,15 @@ margin-right: 8px;
       
     }
     .main-about__socialmedia{
-        width: 338px;
+        width: 84%;
     }
-    .main-about__foto_two{
-        display: block;
+}
+@media (min-width: 650px) and (max-width: 1050px){
+    .main-about__biography{
+        width: 90%;
     }
-    .main-about__foto{
-        display: none;
+    .main-about__social-container{
+        width: 70%;
     }
 }
 
@@ -355,10 +399,18 @@ margin-right: 8px;
         }}
     }
     .main-about{
+        justify-content: center;
         height: 600px;
         background: none;
     }
+    .main-about__foto{
+        display: none;
+    }
+    .main-about__biography-cont{
+        width: 85%;
+    }
     .main-about__biography{
+        width: 100%;
         text-align: center;
         align-items: center;
     }
@@ -376,20 +428,17 @@ margin-right: 8px;
     .main-about__foto_tree{
         display: block;
     }
-    .main-about__foto_two{
-        display: none;
-    }
     .main-about__socialmedia{
-        justify-content: flex-end;
+        max-width: 203px;
+        justify-content: space-between;
     }
-    .main-about__social_container{
-        display: block;
-    }
+    .main-about__social-container{
+        width: 43%;
+        align-items: flex-start;
+        flex-direction: column;
+        }
     .main-about__social{
         justify-content: center;
-    }
-    .tch{
-        margin-right: 24px;
     }
     .footer{
         height: 136px;
@@ -402,5 +451,10 @@ margin-right: 8px;
     }
     .footer-support-vk{
         width: 190px;
+    }
+}
+@media (max-width: 400px) {
+    .main-about__biography-cont{
+        width: 100%;
     }
 }
