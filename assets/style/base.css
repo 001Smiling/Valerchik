@@ -84,9 +84,7 @@ p {
 
 .button-name__btn {
   -webkit-appearance: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -296,7 +294,7 @@ p {
     width: 70px;
   }
   .header .header-container .btn-black,
-  .header .header-container .btn-red {
+.header .header-container .btn-red {
     position: absolute;
     bottom: 1em;
   }
@@ -499,6 +497,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 
 .main-about__social {
@@ -523,7 +522,6 @@ p {
 }
 
 .main-about__vk {
-  cursor: pointer;
   margin-right: 8px;
   width: 29px;
   height: 29px;
@@ -531,6 +529,13 @@ p {
 
 .main-about__tch {
   margin-right: 8px;
+}
+
+a.main-about__href:active,
+a.main-about__href:hover,
+a.main-about__href {
+  text-decoration: none;
+  color: #000;
 }
 
 .footer {
@@ -615,7 +620,7 @@ p {
     justify-content: center;
   }
   .main-firstcomment__text,
-  .main-secondcomment__text {
+.main-secondcomment__text {
     font-size: 18px;
   }
   .main-comments {
@@ -656,7 +661,7 @@ p {
     height: 1200px;
   }
   .main-firstcomment__text,
-  .main-secondcomment__text {
+.main-secondcomment__text {
     width: 81%;
   }
   .main-comments {
@@ -725,8 +730,8 @@ p {
     flex-direction: column;
   }
   .main-wrapper,
-  .main-firstcomment,
-  .main-secondcomment {
+.main-firstcomment,
+.main-secondcomment {
     width: 295px;
     height: 336px;
   }
@@ -743,7 +748,7 @@ p {
     transition: transform 0.5s ease;
   }
   .main-firstcomment,
-  .main-secondcomment {
+.main-secondcomment {
     flex-shrink: 0;
     transform: rotate(0deg);
     margin-bottom: 0;
@@ -826,4 +831,6 @@ p {
   .main-about__biography-cont {
     width: 100%;
   }
-}/*# sourceMappingURL=base.css.map */
+}
+
+/*# sourceMappingURL=base.css.map */
