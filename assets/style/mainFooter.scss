@@ -154,8 +154,8 @@ justify-content: space-between;
 .tch{
     &:hover{
         .main-about__tch{
-            border-radius: 25%;
-            box-shadow: 0 0 9px #b30909, 0 0 6px #e94d18;
+            border-radius: 50%;
+            box-shadow: inset 0px 30px 6px 6px #ad3587, 0px 0px 6px 6px #ad3587;
         }
     }
 }
@@ -235,7 +235,10 @@ a.main-about__href {
         opacity: 0;
         animation: animation 2s 1s forwards;
     }
-    
+    .main-about{
+        opacity: 0;
+        animation: animation 2s 1.2s forwards;
+    }
     @keyframes animation {
         0% {opacity: 0;}
         50% {opacity: 0.8;}
