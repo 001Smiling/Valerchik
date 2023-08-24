@@ -176,20 +176,7 @@ a.main-about__href {
 
 .footer{
     background: #AFE2E3EB;
-    font-family: $mainfont;
-    font-weight: 700;
-    font-size: 20px;
     height: 108px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #000;
-}
-.footer-socialmedia{
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .main-button{
     display: none;
@@ -450,15 +437,6 @@ a.main-about__href {
     }
     .footer{
         height: 136px;
-    }
-    .footer-socialmedia{
-        font-weight: 800;
-        flex-direction: column;
-        width: 320px;
-        height: 70px;
-    }
-    .footer-support-vk{
-        width: 190px;
     }
 }
 @media (max-width: 400px) {

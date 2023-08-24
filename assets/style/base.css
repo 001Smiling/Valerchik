@@ -542,21 +542,7 @@ a.main-about__href {
 
 .footer {
   background: rgba(175, 226, 227, 0.9215686275);
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
   height: 108px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #000;
-}
-
-.footer-socialmedia {
-  width: 70%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .main-button {
@@ -822,15 +808,6 @@ a.main-about__href {
   }
   .footer {
     height: 136px;
-  }
-  .footer-socialmedia {
-    font-weight: 800;
-    flex-direction: column;
-    width: 320px;
-    height: 70px;
-  }
-  .footer-support-vk {
-    width: 190px;
   }
 }
 @media (max-width: 400px) {
