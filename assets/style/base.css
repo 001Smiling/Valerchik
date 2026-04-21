@@ -379,7 +379,7 @@ p {
   .header .header-container .header-buttons .button-name {
     width: 100%;
   }
-  .header .header-container .robot-cloud .robot-text {
+  .robot-text {
     width: 100%;
   }
 }
@@ -800,6 +800,9 @@ a.main-about__href {
   }
   .main-button__right img:active {
     filter: hue-rotate(270deg);
+  }
+  .main-comments__text {
+    height: auto;
   }
   .main-about {
     justify-content: center;
