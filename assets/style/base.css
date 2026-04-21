@@ -727,10 +727,11 @@ a.main-about__href {
   }
   .main-about__biography {
     width: 89%;
-    height: 350px;
+    height: auto;
+    gap: 23px;
   }
   .main-about__title {
-    line-height: 45px;
+    line-height: 160%;
     height: 100px;
   }
   .main-about__socialmedia {
@@ -745,12 +746,14 @@ a.main-about__href {
     width: 70%;
   }
   .main-comments__text {
-    height: auto;
+    height: 137px;
   }
 }
 @media (max-width: 650px) {
   .main {
-    height: 1190px;
+    height: auto;
+    gap: 30px;
+    padding: 50px 0;
   }
   .main-sl {
     flex-direction: column;
@@ -820,10 +823,11 @@ a.main-about__href {
     align-items: center;
   }
   .main-about__title {
-    height: 93px;
+    height: auto;
   }
   .main-about__author {
-    height: 43px;
+    height: auto;
+    font-size: 24px;
   }
   .main-about__foto-tree {
     display: block;
