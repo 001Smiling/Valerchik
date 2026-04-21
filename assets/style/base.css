@@ -53,13 +53,19 @@ p {
 
 .header-container {
   width: 95%;
+  max-width: 1400px;
   display: flex;
   justify-content: space-between;
 }
 
+.header-buttons-cont {
+  display: flex;
+  gap: 20px;
+}
+
 .button-name {
   font-family: "Tektur", cursive;
-  font-size: calc(10px + 10 * ((100vw - 320px) / 1120));
+  font-size: calc(10px + 10 * (100vw - 320px) / 1120);
   font-weight: 700;
   background-color: rgba(175, 226, 227, 0.92);
   border-radius: 30px;
@@ -69,6 +75,7 @@ p {
   text-align: center;
   font-family: "Montserrat", sans-serif;
   margin-bottom: 10px;
+  padding: 0 10px;
 }
 
 .header-buttons {
@@ -79,7 +86,7 @@ p {
 }
 
 .button-header {
-  width: 82%;
+  max-width: 86%;
 }
 
 .button-name__btn {
@@ -88,6 +95,8 @@ p {
      -moz-user-select: none;
           user-select: none;
   display: flex;
+  flex-direction: column;
+  gap: 30px;
   align-items: center;
   justify-content: center;
   outline: none;
@@ -103,8 +112,19 @@ p {
 .button-name__btn:active:not([disabled]) {
   box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
 }
-.button-name__btn img:hover {
+.button-name__btn .button-header:hover {
   width: 80%;
+}
+
+.header-buttons-cont .button-name__btn img {
+  width: auto;
+  max-width: 100%;
+}
+
+.header-buttons-cont .button-name__btn a {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
 }
 
 .robot-cloud {
@@ -114,7 +134,7 @@ p {
 }
 
 .robot-text {
-  font-size: calc(13px + 5 * ((100vw - 320px) / 1120));
+  font-size: calc(13px + 5 * (100vw - 320px) / 1120);
   font-family: "Tektur", cursive;
   background-repeat: no-repeat;
   background-size: cover;
@@ -163,8 +183,9 @@ p {
     background-image: url(../images/bigfon.png);
   }
   .button-name {
-    width: 276px;
-    height: 57px;
+    width: 100%;
+    padding: 0px 30px;
+    height: 68px;
     font-size: 20px;
   }
   .button-name__btn {
@@ -224,7 +245,7 @@ p {
     height: 100px;
     width: 100px;
   }
-  .header .header-container .header-buttons .button-name__btn img:hover {
+  .header .header-container .header-buttons .button-name__btn .button-header:hover {
     width: 78%;
   }
   .header .header-container .robot-cloud .robot-for-desctop {
@@ -271,6 +292,12 @@ p {
     padding-left: 10px;
     padding: 20px 10px 10px 10px;
     min-height: 78px;
+  }
+}
+@media (max-width: 900px) {
+  .header .header-container .header-buttons .button-name__btn {
+    height: 85px;
+    width: 85px;
   }
 }
 @media (max-width: 750px) {
@@ -350,7 +377,10 @@ p {
     height: 166px;
   }
   .header .header-container .header-buttons .button-name {
-    width: 133px;
+    width: 100%;
+  }
+  .header .header-container .robot-cloud .robot-text {
+    width: 100%;
   }
 }
 .main,
@@ -379,6 +409,7 @@ p {
 
 .main-container {
   width: 89%;
+  max-width: 1400px;
 }
 
 .main-firstcomment,
@@ -401,7 +432,7 @@ p {
 .main-secondcomment__text {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: calc(12px + 6 * ((100vw - 320px) / 1120));
+  font-size: calc(12px + 6 * (100vw - 320px) / 1120);
   line-height: 131%;
   text-align: center;
   width: 90%;
@@ -410,7 +441,7 @@ p {
 .main-comments {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: calc(24px + 43 * ((100vw - 320px) / 1120));
+  font-size: calc(24px + 43 * (100vw - 320px) / 1120);
   width: 280px;
   text-align: center;
   line-height: 149%;
@@ -465,7 +496,7 @@ p {
 
 .main-about__title {
   font-family: "Poppins", sans-serif;
-  font-size: calc(18px + 23 * ((100vw - 320px) / 1120));
+  font-size: calc(18px + 23 * (100vw - 320px) / 1120);
   font-weight: 500;
   line-height: 187%;
   text-shadow: 0px 3px 3px rgba(120, 118, 118, 0.492);
@@ -473,27 +504,27 @@ p {
 
 .main-about__author {
   font-family: "Montserrat", sans-serif;
-  font-size: calc(16px + 14 * ((100vw - 320px) / 1120));
+  font-size: calc(16px + 14 * (100vw - 320px) / 1120);
   font-weight: 700;
   line-height: 143%;
   height: 67px;
 }
 
 .main-about__ten {
-  font-size: calc(14px + 11 * ((100vw - 320px) / 1120));
+  font-size: calc(14px + 11 * (100vw - 320px) / 1120);
   font-weight: 700;
 }
 
 .main-about__text {
   font-family: "Montserrat", sans-serif;
-  font-size: calc(16px + 4 * ((100vw - 320px) / 1120));
+  font-size: calc(16px + 4 * (100vw - 320px) / 1120);
   font-weight: 400;
   line-height: 130%;
 }
 
 .main-about__socialmedia {
   font-family: "Poppins", sans-serif;
-  font-size: calc(14px + 4 * ((100vw - 320px) / 1120));
+  font-size: calc(14px + 4 * (100vw - 320px) / 1120);
   font-weight: 700;
   width: 77%;
   display: flex;
@@ -712,6 +743,9 @@ a.main-about__href {
   }
   .main-about__social-container {
     width: 70%;
+  }
+  .main-comments__text {
+    height: auto;
   }
 }
 @media (max-width: 650px) {

@@ -25,6 +25,7 @@
 }
 .main-container{
     width: 89%;
+    max-width: 1400px;
 }
 
 .main-firstcomment,
@@ -340,6 +341,9 @@ a.main-about__href {
     }
     .main-about__social-container{
         width: 70%;
+    }
+    .main-comments__text {
+        height: auto;
     }
 }
 

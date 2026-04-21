@@ -12,10 +12,14 @@
 
 .header-container {
     width: 95%;
+    max-width: 1400px;
     display: flex;
     justify-content: space-between;
 }
-
+.header-buttons-cont {
+    display: flex;
+    gap: 20px;
+}
 .button-name {
     font-family: $cloudfont;
     @include adaptiv-font(20, 10);
@@ -28,6 +32,7 @@
     text-align: center;
     font-family: $mainfont;
     margin-bottom: 10px;
+    padding: 0 10px;
 }
 
 .header-buttons {
@@ -38,13 +43,14 @@
 }
 
 .button-header {
-    width: 82%;
+    max-width: 86%;
 }
-
 .button-name__btn {
     -webkit-appearance: none;
     user-select: none;
     display: flex;
+    flex-direction: column;
+    gap: 30px;
     align-items: center;
     justify-content: center;
     outline: none;
@@ -60,11 +66,19 @@
         &:active:not([disabled]) {
         box-shadow: $button-shadow-active;
         }
-        img:hover {
+        .button-header:hover {
             width: 80%;
         }
 }
-
+.header-buttons-cont .button-name__btn img {
+    width: auto;
+    max-width: 100%;
+}
+.header-buttons-cont .button-name__btn a {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+}
 .robot-cloud {
     display: flex;
     background-repeat: no-repeat;
@@ -118,8 +132,9 @@
     }
 
     .button-name {
-        width: 276px;
-        height: 57px;
+        width: 100%;
+        padding: 0px 30px;
+        height: 68px;
         font-size: 20px;
     }
 
@@ -190,7 +205,7 @@
                     height: 100px;
                     width: 100px;
 
-                    img:hover {
+                    .button-header:hover {
                         width: 78%;
                     }
                 }
@@ -253,6 +268,12 @@
     }
 }
 
+@media (max-width: 900px) {
+    .header .header-container .header-buttons .button-name__btn {
+        height: 85px;
+        width: 85px;
+    }
+}
 
 @media (max-width: 750px) {
     .header {
@@ -368,9 +389,12 @@
             }
             .header-buttons {
                 .button-name {
-                    width: 133px;
+                    width: 100%;
                 }
             }
         }
+    }
+    .robot-text {
+        width: 100%;
     }
 }
